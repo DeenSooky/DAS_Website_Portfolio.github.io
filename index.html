@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial -scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/8220c148c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="pictures/website_logo_preview_rev_1.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>University Graduate</p>
+      <h1>Hello, my name is <span>Deen Armani Sooky</span></h1>
+    </div>
+  </div>
+</div>
+<!---------------about---------->
+<div id="about">
+<div class="container">
+  <div class="row">
+    <div class="about-col-1">
+       <img src="pictures/Screenshot 2023-03-22 013306.png">
+  </div>
+  <div class="about-col-2">
+      <h1 class="sub-title">About Me</h1>
+      <p>Hi there! My name is Deen Sooky, and I'm a mechanical engineering student based in Nottingham. I am currrently persuing my Bachelor's degree in Mechancial engineering from the University Of Nottingham, and I've been studying in university for four years.
+
+        Some of my recent accomplishments include desinging code for a robot to open and read a file containing instructions to draw a grid with various shapes.
+       
+       My key skills include expertise in Java, Python, and C, as well as strong problem-solving and communication skills. Outside of work, I enjoy weight-lifting, playing football, and travelling as much as I can.
+       
+       In the future, I hope to continue growing my technical skills and eventually move into a leadership role. I'm excited about the opportunities ahead and look forward to connecting with others in the industry.
+       
+       Thanks for reading!</p>
+       <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+        <p class="tab-links"onclick="opentab('education')">Education</p>
+       </div>
+       <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>App Development</span><br>Building Android apps</li>
+          <li><span>3D Modelling</span><br>Building 3D modelled objects</li>
+          <li><span>Designing Intelligent Agents</span><br>Building virtual environments with high level agents</li>
+        </ul>
+       </div>
+       <div class="tab-contents" id="experience">
+        <ul>
+          <li><span>2022- 2023</span><br>Designed code for a drawing robot</li>
+          <li><span>2021 - 2022</span><br>Designed code to simulate and analyse the thermal conduction equation</li>
+          <li><span>2020 - 2021</span><br>Designed a 3D model piston-rod using Solidworks </li>
+        </ul>
+       </div>
+       <div class="tab-contents" id="education">    
+        <ul>
+          <li><span>2019 - current</span><br>Bachelor's in mechanical engineering at the University Of Nottingham</li>
+          <li><span>2017 - 2019</span><br>Three A levels at Enfield Grammar Sixth Form</li>
+          <li><span>2012 - 2015</span><br>9 GCSE's at Enfield Grammar School </li>
+        </ul>
+       </div>
+   </div>
+  </div> 
+</div>
+</div>
+<!----------------services----------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>                      
+    <div class="services-list">
+     <div>
+      <i class="fa-solid fa-code"></i>
+      <h2>Web Design</h2>
+      <p>Strong front-end developing skills using HTML,CSS and JavaScript </p>
+     </div> 
+     <div>
+      <i class="fa-brands fa-app-store"></i>
+      <h2>App Design</h2>
+      <p>Strong mobile application developing skills for android using android studios </p>
+     </div> 
+     <div>
+      <i class="fa-solid fa-crop"></i>
+      <h2>UX/UI Design</h2>
+      <p>strong understanding of user experience and interface design</p>
+     </div> 
+    </div>
+  </div>
+</div>
+<!--------------potfolio----------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="pictures/tomas-yates-TQHDStvFi60-unsplash.jpg">
+        <div class="layer">
+          <h3> Designing a thrust reverser actuation system lock (TRASL) using Solidworks</h3>
+          <p>Designed a 3D model of a Thrust Reverser Actuation System Lock (TRASL)</p>
+          <a href='https://github.com/DeenSooky/DAS/blob/main/Individual%20design%20TRASL%20CDR%20report_deen%20sooky_20157875%20(1).pdf'><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="pictures/yogesh-phuyal-mjwGKmwkDDA-unsplash.jpg">
+        <div class="layer">
+          <h3> Interfacing of analog signals, sensors and actuators</h3>
+          <p>Investigated waveforms associated with pulse width modulation and quadrature encoding.</p>
+          <a href='https://github.com/DeenSooky/DAS/blob/main/LAB2prepDAS.zip'><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="pictures/arnold-francisca-f77Bh3inUpE-unsplash.jpg">
+        <div class="layer">
+          <h3> software development project for a drawing robot</h3>
+          <p>Code is designed for a robot to draw out a 3x3 grid and draw six centred shapes in each grid.</p>
+          <a href='https://github.com/DeenSooky/DAS/blob/main/SoftwareProjectDAS_20157875.zip'><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      </div>
+      <a href="https://github.com/DeenSooky/DAS/tree/main" class="btn">See more</a>
+    </div>
+  </div>
+<!----------------------contact------------------>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>dsooky11@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>07384750419</p>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="pictures/Deen Sooky CV 2023.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright @ Deen.</p>
+  </div>
+</div>
+
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw8Mg3cV2cr6fMwccuGkRJvLxjgo1mZ_t4Mb2T5A6qpfXioaUiKpkxgTxExLrpqAVSo/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const masg = document.getElementById("msg")
+
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      msg.innerHTML= "Message sent successfully"
+      setTimeout(function(){
+        msg.innerHTML=""
+      },5000)
+      form.reset()
+      })
+  .catch(error => console.error('Error!', error.message))
+})
+</script>
+
+ 
+</body>
+</html>
+
+
